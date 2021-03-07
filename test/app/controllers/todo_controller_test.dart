@@ -12,9 +12,9 @@ main() {
   });
 
   test('estado start antes de rodar e success depois',() async {
-    expect(controller.state,HomeState.start);
+    expect(controller.state.value,HomeState.start);
     await controller.start();
-    expect(controller.state,HomeState.success);
+    expect(controller.state.value,HomeState.success);
   });
 
 }
